@@ -1,0 +1,67 @@
+BL51 BANKED LINKER/LOCATER V6.22.4.0                                                    03/28/2023  15:12:19  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22.4.0, INVOKED BY:
+C:\KEIL_V5\C51\BIN\BL51.EXE .\Objects\Exemplo1.obj, .\Objects\Exemplo2.obj TO .\Objects\Projeto 1 PRINT (.\Listings\Proj
+>> eto 1.m51) RAMSIZE (256)
+
+
+INPUT MODULES INCLUDED:
+  .\Objects\Exemplo1.obj (EXEMPLO1)
+  .\Objects\Exemplo2.obj (EXEMPLO2)
+
+
+LINK MAP OF MODULE:  .\Objects\Projeto 1 (EXEMPLO1)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0007H     ABSOLUTE     
+* OVERLAP * CODE    0000H     000AH     ABSOLUTE     
+
+
+
+SYMBOL TABLE OF MODULE:  .\Objects\Projeto 1 (EXEMPLO1)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        EXEMPLO1
+  D:0090H         SYMBOL        P1
+  C:0002H         SYMBOL        VOLTA
+  C:0000H         LINE#         2
+  C:0002H         LINE#         4
+  C:0003H         LINE#         5
+  C:0005H         LINE#         6
+  -------         ENDMOD        EXEMPLO1
+
+  -------         MODULE        EXEMPLO2
+  D:0090H         SYMBOL        P1
+  D:0090H         SYMBOL        PORTA1
+  N:00E0H         SYMBOL        SOMADOR
+  C:0003H         SYMBOL        VOLTA
+  N:0000H         SYMBOL        ZERO
+  C:0000H         LINE#         5
+  C:0003H         LINE#         7
+  C:0005H         LINE#         8
+  C:0008H         LINE#         9
+  -------         ENDMOD        EXEMPLO2
+
+*** WARNING L5: CODE SPACE MEMORY OVERLAP
+    FROM:    0000H
+    TO:      0006H
+
+******************************************************************************
+* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 0011H BYTE ( 0%) *
+******************************************************************************
+BL51 BANKED LINKER/LOCATER V6.22.4.0                                                  03/28/2023  15:12:19  PAGE 2
+
+
+
+Program Size: data=8.0 xdata=0 code=17
+LINK/LOCATE RUN COMPLETE.  1 WARNING(S),  0 ERROR(S)

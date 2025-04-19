@@ -1,0 +1,39 @@
+A51 MACRO ASSEMBLER  EXEMPLO2                                                             03/28/2023 15:24:16 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+OBJECT MODULE PLACED IN .\Objects\Exemplo2.obj
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE Exemplo2.asm SET(SMALL) DEBUG PRINT(.\Listings\Exemplo2.lst) OBJECT(.\O
+                      bjects\Exemplo2.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+  0000                 1     ZERO EQU 00h
+  00E0                 2     SOMADOR EQU 0E0h
+  0090                 3     PORTA1 EQU P1
+0000                   4                     ORG 0
+0000 75E000            5                     MOV SOMADOR,#ZERO
+                       6                     
+0003 05E0              7     VOLTA: INC SOMADOR
+0005 85E090            8                     MOV PORTA1, SOMADOR
+0008 80F9              9                     SJMP VOLTA
+                      10                     END
+A51 MACRO ASSEMBLER  EXEMPLO2                                                             03/28/2023 15:24:16 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+P1 . . . . . . . .  D ADDR   0090H   A   
+PORTA1 . . . . . .  D ADDR   0090H   A   
+SOMADOR. . . . . .  N NUMB   00E0H   A   
+VOLTA. . . . . . .  C ADDR   0003H   A   
+ZERO . . . . . . .  N NUMB   0000H   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

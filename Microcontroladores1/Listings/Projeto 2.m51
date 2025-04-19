@@ -1,0 +1,49 @@
+BL51 BANKED LINKER/LOCATER V6.22.4.0                                                    03/28/2023  15:24:17  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22.4.0, INVOKED BY:
+C:\KEIL_V5\C51\BIN\BL51.EXE .\Objects\Exemplo2.obj TO .\Objects\Projeto 2 PRINT (.\Listings\Projeto 2.m51) RAMSIZE (256)
+>> 
+
+
+INPUT MODULES INCLUDED:
+  .\Objects\Exemplo2.obj (EXEMPLO2)
+
+
+LINK MAP OF MODULE:  .\Objects\Projeto 2 (EXEMPLO2)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     000AH     ABSOLUTE     
+
+
+
+SYMBOL TABLE OF MODULE:  .\Objects\Projeto 2 (EXEMPLO2)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        EXEMPLO2
+  D:0090H         SYMBOL        P1
+  D:0090H         SYMBOL        PORTA1
+  N:00E0H         SYMBOL        SOMADOR
+  C:0003H         SYMBOL        VOLTA
+  N:0000H         SYMBOL        ZERO
+  C:0000H         LINE#         5
+  C:0003H         LINE#         7
+  C:0005H         LINE#         8
+  C:0008H         LINE#         9
+  -------         ENDMOD        EXEMPLO2
+
+******************************************************************************
+* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 000AH BYTE ( 0%) *
+******************************************************************************
+
+Program Size: data=8.0 xdata=0 code=10
+LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

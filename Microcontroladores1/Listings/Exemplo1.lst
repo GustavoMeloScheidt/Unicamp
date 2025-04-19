@@ -1,0 +1,33 @@
+A51 MACRO ASSEMBLER  EXEMPLO1                                                             03/28/2023 15:02:35 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+OBJECT MODULE PLACED IN .\Objects\Exemplo1.obj
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE Exemplo1.asm SET(SMALL) DEBUG PRINT(.\Listings\Exemplo1.lst) OBJECT(.\O
+                      bjects\Exemplo1.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000                   1     ORG 0
+0000 7400              2     MOV A,#00h
+                       3     
+0002 04                4     VOLTA: INC A; incrementa A
+0003 F590              5                     MOV P1,A
+0005 80FB              6                     SJMP VOLTA
+                       7                     END
+A51 MACRO ASSEMBLER  EXEMPLO1                                                             03/28/2023 15:02:35 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+P1 . . . . . . . .  D ADDR   0090H   A   
+VOLTA. . . . . . .  C ADDR   0002H   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

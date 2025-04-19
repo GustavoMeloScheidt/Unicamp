@@ -1,0 +1,7 @@
+ORG 0
+MOV A,#00h
+
+VOLTA: INC A; incrementa A
+		MOV P1,A
+		SJMP VOLTA
+		END
